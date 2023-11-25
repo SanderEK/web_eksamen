@@ -2,30 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ditt Nettsted - Produkter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Hjem</a>
-            <a href="about.html">Om Oss</a>
-            <a href="products.html">Produkter</a>
-        </nav>
-    </header>
-    <main>
-        <section id="design">
-            <!-- Innhold for Design-seksjonen -->
-        </section>
-        <section id="branding">
-            <!-- Innhold for Branding-seksjonen -->
-        </section>
-        <section id="development">
-            <!-- Innhold for Development-seksjonen -->
-        </section>
-    </main>
-    <footer>
-        <!-- Fotter innhold -->
-    </footer>
+    <div class="navigation">
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="portfolio-header">
+        <h1>Portfolio</h1>
+    </div>
+
+    <div class="explore-section">
+        <h2>Explore previous jobs</h2>
+        <div class="filters">
+            <a href="#branding" class="filter">Branding</a>
+            <a href="#design" class="filter">Design</a>
+            <a href="#development" class="filter">Development</a>
+        </div>
+    </div>
+
+    <div class="portfolio-content">
+        <div class="category-branding">
+            <h3>Branding</h3>
+            <div class="projects-grid">
+                <!-- Repeat for each project -->
+                <div class="project-item">
+                    <img src="placeholder-400x400.png" alt="Branding project">
+                    <p>Project description here</p>
+                </div>
+                <!-- ... -->
+            </div>
+        </div>
+
+        <div class="category-design">
+            <h3>Design</h3>
+            <div class="projects-grid">
+                <!-- Repeat for each project -->
+                <div class="project-item">
+                    <img src="placeholder-400x400.png" alt="Design project">
+                    <p>Project description here</p>
+                </div>
+                <!-- ... -->
+            </div>
+        </div>
+
+        <div class="category-development">
+            <h3>Development</h3>
+            <div class="projects-grid">
+                <!-- Repeat for each project -->
+                <div class="project-item">
+                    <img src="placeholder-400x400.png" alt="Development project">
+                    <p>Project description here</p>
+                </div>
+                <!-- ... -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Companyname 2023</p>
+        <div class="social-links">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
+    </div>
 </body>
 </html>

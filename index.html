@@ -2,25 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ditt Nettsted - Hjem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <!-- Lenker til de andre sidene -->
-            <a href="index.html">Hjem</a>
-            <a href="about.html">Om Oss</a>
-            <a href="products.html">Produkter</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
+        <div class="headline">
+            <h1>Compelling Headline</h1>
+            <p>Engaging subheading. What can you help your visitors with?</p>
+            <a href="#services" class="btn">Read more about our services</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <!-- Innhold for forsiden -->
-        </section>
-    </main>
+    <section class="about">
+        <h2>About Our Company</h2>
+        <div class="content">
+            <img src="placeholder.png" alt="About our company">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="#more-about-us" class="btn">Read more about us</a>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <article>
+                <h3>Branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+            <article>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+            <article>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </article>
+        </div>
+    </section>
+    <section class="newsletter">
+        <h2>Sign up for our newsletter</h2>
+        <form>
+            <input type="email" placeholder="Your email">
+            <button type="submit">Sign me up!</button>
+        </form>
+    </section>
     <footer>
-        <!-- Fotter innhold -->
+        <p>© Companyname 2023</p>
+        <div class="social-links">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#linkedin">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
