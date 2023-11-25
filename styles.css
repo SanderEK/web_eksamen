@@ -82,7 +82,7 @@ nav ul li a {
 .aboutus {
   background-color: #8AAAE5;
   padding: 30px;
-  height: 400px;
+  height: 460px;
 }
 
 .services1 {
@@ -119,15 +119,14 @@ nav ul li a {
   width: 50%;
 }
 
-/* Newsletter section styles */
+
 .newsletter {
   background: #333;
   color: #fff;
-  padding: 40px;
+  padding: 80px;
   text-align: center;
-  height: 400px;
-  
 }
+
 
 .newsletter form {
   margin-top: 20px;
@@ -189,6 +188,11 @@ footer {
   object-fit: cover;
 }
 
+.aboutustext {
+  margin-right: 300px;
+  margin-left: 30px;
+}
+
 
 /* Additional styles to ensure text is readable over the video */
 .about .content {
@@ -200,4 +204,38 @@ footer {
 
 section.about .background-video {
   height: 1000px;
+}
+
+.aboutus .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This will place the image and text at opposite ends */
+}
+
+.aboutus .image-container {
+  flex: 0 0 400px; /* This makes sure the image container doesn't grow or shrink but stays at 400px */
+  height: 400px; /* Height of the image container */
+  margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.aboutus .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the entire container without being stretched */
+}
+
+.aboutus .service-list {
+  flex: 1; /* This allows the text section to fill up the remaining space */
+}
+
+/* Responsive adjustments, if needed */
+@media (max-width: 768px) {
+  .aboutus .container {
+      flex-direction: column;
+  }
+
+  .aboutus .image-container {
+      margin-right: 0;
+      margin-bottom: 20px; /* Adds space between the image and text on smaller screens */
+  }
 }
