@@ -64,6 +64,7 @@ nav ul li a.active {
 
 .btn {
   display: inline-block;
+  font-weight: bold;
   background: #e6bd43;
   color: #252525;
   padding: 10px 30px;
@@ -82,6 +83,7 @@ nav ul li a.active {
 .btn2 {
   margin-top: 20px;
   display: inline-block;
+  font-weight: bold;
   background-color: transparent; 
   color: #252525; 
   padding: 10px 20px;
@@ -97,8 +99,6 @@ nav ul li a.active {
   color: #e6bd43; 
   border-color: #e6bd43; 
 }
-
-
 
 .about {
   position: relative;
@@ -158,6 +158,12 @@ nav ul li a.active {
   justify-content: space-around;
   margin-top: 20px;
 }
+
+.service-list article img {
+  height: auto;
+  margin-bottom: 15px;
+}
+
 
 .service-list article {
   width: 30%;
