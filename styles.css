@@ -118,6 +118,13 @@ nav ul li a.active {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .background-video {
+      display: none;
+  }
+}
+
+
 .video-overlay {
   position: absolute;
   top: 0;
