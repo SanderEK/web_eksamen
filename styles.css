@@ -318,3 +318,190 @@ footer {
   transform: scale(1.2); 
 }
 
+.about {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  object-fit: cover; 
+}
+
+.text-content {
+  position: absolute;
+  top: 50%; /* Centers content vertically */
+  right: 0; /* Aligns content to the right of the container */
+  z-index: 2; /* Above the background image */
+  background: rgba(255, 255, 255, 0.9); /* Less transparent white background */
+  padding: 40px; /* Increased padding for larger area */
+  width: calc(60% - 80px); /* Increased width, accounting for padding */
+  max-width: 700px; /* Maximum width, adjust as needed */
+  transform: translateY(-50%); /* Centers content vertically */
+  text-align: left; /* Aligns text inside the content area to the left */
+  margin-right: 50px;
+}
+
+/* You can add more styles here as needed */
+
+
+.text-content h1,
+.text-content p {
+  margin-bottom: 20px; /* Space below the heading and paragraph */
+}
+
+.text-content button {
+  background: #e6bd43; /* Example button color */
+  color: #252525; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for the button */
+  font-weight: bold; /* Makes the text bold */
+}
+
+/* ... (rest of your styles) ... */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .text-content {
+      position: relative; /* Resets to default positioning */
+      top: auto; /* Clears the top positioning */
+      right: auto; /* Clears the right positioning */
+      left: auto; /* Clears the left positioning */
+      transform: none; /* Clears the transform */
+      width: 100%; /* Full width of the container */
+      max-width: none; /* Allows the text box to expand to full width */
+      padding: 20px; /* Adjust padding as needed */
+      margin: 0 auto; /* Centers the content box */
+      text-align: center; /* Centers the text inside the content box */
+  }
+}
+
+.clients {
+  background: #e6bd43;
+  padding: 70px;
+  text-align: center;
+}
+
+/* Existing Styles */
+.service-list2 img {
+  /* Add your existing styles here (if any) */
+  margin-right: 40px; /* Adjust the margin to bring images closer */
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) { /* Adjust the max-width based on your breakpoint */
+  .service-list2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center images vertically */
+  }
+
+  .service-list2 img {
+      margin-right: 0; /* Remove right margin on mobile */
+      margin-bottom: 10px; /* Add space between stacked images */
+  }
+}
+
+/* Contact Us Section styles */
+.contact-us {
+  text-align: center;
+  padding: 40px;
+  background: #fff; /* Change this to match your site's design */
+}
+
+.contact-us h2 {
+  margin-bottom: 30px; /* Space below the main heading */
+}
+
+.contact-us article {
+  margin-bottom: 20px; /* Space below each article for mobile view */
+}
+
+.contact-us > h2 {
+  width: 100%;
+}
+
+.contact-form,
+.contact-info {
+  width: 48%; /* Adjusts the width of each column */
+  display: inline-block;
+  vertical-align: top; /* Keeps columns top aligned */
+}
+
+.contact-form h3,
+.contact-info h3 {
+  color: #333; /* Your desired color for the subheadings */
+  margin-bottom: 10px;
+}
+
+/* Form styles */
+.contact-form form {
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333; /* Change as per your color scheme */
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: calc(100% - 22px); /* Adjusts for padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Allows only vertical resizing */
+  max-height: 300px; /* Optional: sets a maximum height when resizing */
+}
+
+/* Contact Info styles */
+.contact-info {
+  text-align: left;
+}
+
+.contact-info address,
+.contact-info phone,
+.contact-info email {
+  margin-bottom: 10px;
+  font-style: normal; /* address tag usually italicized by default */
+}
+
+.contact-info a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+      width: 100%; /* Full width on smaller screens */
+      display: block;
+  }
+
+  .contact-form h3,
+  .contact-info h3 {
+      text-align: center;
+  }
+}
