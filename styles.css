@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +8,11 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #000000;
+}
+
+main {
+  display: grid;
+  row-gap: 1rem;
 }
 
 h1 {
@@ -136,8 +140,16 @@ nav ul li a.active {
   z-index: 1; 
 }
 
+/* -------------------------------1----------------------------- */
+
 .about .content {
   margin-top: 130px;
+  position: relative;
+  z-index: 2;
+}
+
+.about .productsheader {
+  margin-top: 170px;
   position: relative;
   z-index: 2;
 }
@@ -302,6 +314,8 @@ footer {
   opacity: 1; 
 }
 
+/* -------------------------------1----------------------------- */
+
 .main-container {
   max-width: 1600px;
   margin: 0 auto; 
@@ -343,53 +357,48 @@ footer {
 
 .text-content {
   position: absolute;
-  top: 50%; /* Centers content vertically */
-  right: 0; /* Aligns content to the right of the container */
-  z-index: 2; /* Above the background image */
-  background: rgba(255, 255, 255, 0.9); /* Less transparent white background */
-  padding: 40px; /* Increased padding for larger area */
-  width: calc(60% - 80px); /* Increased width, accounting for padding */
-  max-width: 700px; /* Maximum width, adjust as needed */
-  transform: translateY(-50%); /* Centers content vertically */
-  text-align: left; /* Aligns text inside the content area to the left */
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  width: calc(60% - 80px);
+  max-width: 700px;
+  transform: translateY(-50%);
+  text-align: left;
   margin-right: 50px;
 }
 
-/* You can add more styles here as needed */
-
-
 .text-content h1,
 .text-content p {
-  margin-bottom: 20px; /* Space below the heading and paragraph */
+  margin-bottom: 20px;
 }
 
 .text-content button {
-  background: #e6bd43; /* Example button color */
-  color: #252525; /* Button text color */
+  background: #e6bd43;
+  color: #252525;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 5px; /* Rounded corners for the button */
-  font-weight: bold; /* Makes the text bold */
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/* ... (rest of your styles) ... */
-
-/* Mobile Styles */
 @media (max-width: 768px) {
   .text-content {
-      position: relative; /* Resets to default positioning */
-      top: auto; /* Clears the top positioning */
-      right: auto; /* Clears the right positioning */
-      left: auto; /* Clears the left positioning */
-      transform: none; /* Clears the transform */
-      width: 100%; /* Full width of the container */
-      max-width: none; /* Allows the text box to expand to full width */
-      padding: 20px; /* Adjust padding as needed */
-      margin: 0 auto; /* Centers the content box */
-      text-align: center; /* Centers the text inside the content box */
+      position: relative;
+      top: auto;
+      right: auto;
+      left: auto;
+      transform: none;
+      width: 100%;
+      max-width: none;
+      padding: 20px;
+      margin: 0 auto;
+      text-align: center;
   }
 }
+
 
 .clients {
   background: #e6bd43;
@@ -397,39 +406,35 @@ footer {
   text-align: center;
 }
 
-/* Existing Styles */
 .service-list2 img {
-  /* Add your existing styles here (if any) */
-  margin-right: 40px; /* Adjust the margin to bring images closer */
+  margin-right: 40px;
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) { /* Adjust the max-width based on your breakpoint */
+@media screen and (max-width: 768px) {
   .service-list2 {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center images vertically */
+      align-items: center;
   }
 
   .service-list2 img {
-      margin-right: 0; /* Remove right margin on mobile */
-      margin-bottom: 10px; /* Add space between stacked images */
+      margin-right: 0;
+      margin-bottom: 10px;
   }
 }
 
-/* Contact Us Section styles */
 .contact-us {
   text-align: center;
   padding: 40px;
-  background: #fff; /* Change this to match your site's design */
+  background: #fff;
 }
 
 .contact-us h2 {
-  margin-bottom: 30px; /* Space below the main heading */
+  margin-bottom: 30px;
 }
 
 .contact-us article {
-  margin-bottom: 20px; /* Space below each article for mobile view */
+  margin-bottom: 20px;
 }
 
 .contact-us > h2 {
@@ -438,40 +443,41 @@ footer {
 
 .contact-form,
 .contact-info {
-  width: 48%; /* Adjusts the width of each column */
+  width: 48%;
   display: inline-block;
-  vertical-align: top; /* Keeps columns top aligned */
+  vertical-align: top;
 }
 
 .contact-form h3,
 .contact-info h3 {
-  color: #333; /* Your desired color for the subheadings */
+  color: #333;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-/* Form styles */
 .contact-form form {
   text-align: left;
 }
+
+/* -------------------------------1----------------------------- */
 
 .contact-form label {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
-  color: #333; /* Change as per your color scheme */
+  color: #333;
 }
 
 .contact-form input[type="text"],
 .contact-form textarea {
-  width: calc(100% - 22px); /* Adjusts for padding */
+  width: calc(100% - 22px);
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  resize: vertical; /* Allows only vertical resizing */
-  max-height: 300px; /* Optional: sets a maximum height when resizing */
+  resize: vertical;
+  max-height: 300px;
 }
 
-/* Contact Info styles */
 .contact-info {
   text-align: left;
 }
@@ -480,7 +486,7 @@ footer {
 .contact-info phone,
 .contact-info email {
   margin-bottom: 10px;
-  font-style: normal; /* address tag usually italicized by default */
+  font-style: normal;
 }
 
 .contact-info a {
@@ -492,11 +498,10 @@ footer {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .contact-form,
   .contact-info {
-      width: 100%; /* Full width on smaller screens */
+      width: 100%;
       display: block;
   }
 
@@ -504,4 +509,93 @@ footer {
   .contact-info h3 {
       text-align: center;
   }
+}
+
+.products-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.product.small {
+  width: calc(33%);
+}
+
+.product.large {
+  margin-top: 40px;
+  width: 50%;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product h3 {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.separator {
+  border: none;
+  height: 3px;
+  background-color: #e6bd43;
+  margin: 20px 0;
+}
+
+.category-nav {
+  text-align: left;
+}
+
+.category-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.category-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.category-nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.category-nav li a:hover {
+  background-color: #252525;
+  color: #e6bd43;
+  border-color: #e6bd43;
+}
+
+.product:hover img,
+.product:hover h3 {
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.product img {
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  position: relative;
 }
