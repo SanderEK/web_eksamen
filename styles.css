@@ -513,7 +513,6 @@ footer {
 
 .products-container {
   max-width: 1600px;
-  margin: 0 auto;
   padding: 20px;
 }
 
@@ -529,18 +528,19 @@ footer {
 }
 
 .product.small {
-  width: calc(33%);
+  flex: 0 0 calc(33% - 10px); 
 }
 
 .product.large {
+  flex: 0 0 calc(50% - 10px); 
+  grid-column: span 2; /* Large products span 2 columns */
   margin-top: 40px;
-  width: 50%;
 }
 
 .product img {
   width: 100%;
   height: auto;
-  display: block;
+  display: flex;
 }
 
 .product h3 {
