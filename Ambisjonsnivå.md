@@ -1,1 +1,0 @@
-Jeg går etter C-A ambisjonsnivå.
